@@ -2,11 +2,14 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Header from './Header';
 
 
 
 function Home() {
     return (
+        <>
+            <Header/>
         <Container>
             <Row>
                 <Col>
@@ -15,6 +18,7 @@ function Home() {
                 </Col>
             </Row>
         </Container>
+        </>
     );
 }
 

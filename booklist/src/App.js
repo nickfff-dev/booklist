@@ -6,11 +6,12 @@ import Col from 'react-bootstrap/Col';
 
 
 
+
 function App() {
   return (
-    <Container>
+    <>
       <Home />
-      </Container>
+      </>
   );
 }
 
