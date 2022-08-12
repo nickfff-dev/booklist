@@ -5,11 +5,12 @@ import Navbar from 'react-bootstrap/Navbar'
 
 function Header() {
   return (
-    <Navbar className="bg-dark text-white">
+    <Navbar expand="lg" className="navbar text-white">
       <Container>
-        <Navbar.Brand className="text-white" href="#home">Elimu~Leo</Navbar.Brand>
+       
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-evenly">
+        <Navbar.Brand className="text-white" href="#home">Elimu~Leo</Navbar.Brand>
           <Nav.Item className="ms-2">
             <Nav.Link href="#home"> <span><i className='fa fa-home'></i></span> &nbsp; Home</Nav.Link>
           </Nav.Item>

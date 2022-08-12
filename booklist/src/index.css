@@ -2,3 +2,56 @@ body {
  
   font-family: "Baloo 2";
 }
+
+
+.navbar{
+  background-color: #2A0944;
+}
+
+
+.hero {
+  
+  background: linear-gradient(to left, rgba(161,0,35,.2)20% ,  hsl(347, 100%, 12%) 96%), url(https://okcredit-blog-images-prod.storage.googleapis.com/2021/01/shutterstock_481616641.jpg) no-repeat center/ cover ;
+
+  font-size: 2rem;
+
+  height: 20em;
+  padding: 9% 5%;
+  
+}
+
+button{
+  font-size: 1rem;
+  background-color: #2A0944;
+  color: #fff;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+
+}
+
+.hero p{
+  word-break: break-word;
+  font-size: 1em;
+  
+}
+p::first-letter{
+  text-transform: uppercase;
+}
+p, div, h1, h2,h3,h4{
+  margin: 0
+}
+
+
+
+.clients{
+  background-color:rgba(63, 167, 150, 0.1) ;
+  padding: 2%;
+}
+
+
+
+
+.hero + h2{
+  color: #2A0944
+}
