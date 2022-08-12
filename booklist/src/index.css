@@ -8,18 +8,30 @@ body {
   background-color: #2A0944;
 }
 
-
+table{
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+thead{
+  background: #A10035;
+  color: white;
+}
 .hero {
   
   background: linear-gradient(to left, rgba(161,0,35,.2)20% ,  hsl(347, 100%, 12%) 96%), url(https://okcredit-blog-images-prod.storage.googleapis.com/2021/01/shutterstock_481616641.jpg) no-repeat center/ cover ;
 
   font-size: 2rem;
 
-  height: 20em;
+  min-height: 20em;
   padding: 9% 5%;
   
 }
 
+
+.btn{
+  background:#2A0944;
+  border: 0;
+}
 button{
   font-size: 1rem;
   background-color: #2A0944;

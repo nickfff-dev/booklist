@@ -46,7 +46,17 @@ const RootQuery = new GraphQLObjectType({
           BookStore: { type: new GraphQLNonNull(GraphQLString) }
         },
         resolve(root, args) { 
-          return allbooks.filter(book => book.BookStore === args.bookstore)
+          return allbooks.filter(book => book.BookStore === args.BookStore)
+        }
+
+      },
+      byBookTitle: {
+        type: new GraphQLList(BookType),
+        args: {
+          BookTitle: { type: new GraphQLNonNull(GraphQLString) }
+        },
+        resolve(root, args) { 
+          return allbooks.filter(book => book.BookTitle.replace(/[^a-zA-Z0-9]/g, '').toLowerCase().includes(args.BookTitle.replace(/[^a-zA-Z0-9]/g, '').toLowerCase()))
         }
 
       }

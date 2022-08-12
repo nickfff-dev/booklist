@@ -4,6 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Header from './Header';
 import Nuria from "./images/Nuria.jpg"
+import Table from 'react-bootstrap/Table';
 
 
 
@@ -19,11 +20,11 @@ function Home() {
                     
             </div>
             <Container>
-            <hr/>
+           
            </Container>
             <h2 className="text-center col-md-4 offset-md-4 my-5">we aggregate books from the following major online stores, so you can find the best price for your book</h2>
             
-            <Container>
+        
             <div className='clients d-flex flex-row flex-wrap justify-content-evenly rounded'>
                 <img src="https://textbookcentre.com/static/img/logo.4a06b1d89d38.svg" width="200" className="img-fluid" />
                     <img src={Nuria} width="200" className="img-fluid" />
@@ -31,7 +32,7 @@ function Home() {
 
             </div>
            
-           </Container>
+   
        
         </>
     );
