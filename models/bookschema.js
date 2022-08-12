@@ -10,7 +10,7 @@ const {
 
 
 
-const allbooks = require("./sampledata")
+const allbooks = require("../sampledata")
 
 
 const BookType = new GraphQLObjectType({
@@ -31,16 +31,35 @@ const BookType = new GraphQLObjectType({
 
 const RootQuery = new GraphQLObjectType({
   name: "RootQueryType",
-  fields: {
-    book: {
-      type: new GraphQLList(BookType),
-      resolve(root) {
-        return allbooks
-        
+  fields: () => (
+    {
+      books: {
+        type: new GraphQLList(BookType),
+        resolve(root) {
+          return allbooks
+          
+        }
+      },
+      byBookstore: {
+        type: new GraphQLList(BookType),
+        args: {
+          BookStore: { type: new GraphQLNonNull(GraphQLString) }
+        },
+        resolve(root, args) { 
+          return allbooks.filter(book => book.BookStore === args.bookstore)
+        }
+
       }
     }
-  }
+  )
 })
+
+
+
+
+
+
+
 
 
 

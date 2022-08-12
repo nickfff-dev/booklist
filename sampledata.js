@@ -1,4 +1,4 @@
-const books = [
+const sampledata = [
     {"BookTitle": "CASE FOR GOD, THE", "BookAuthor": "Karen Armstrong", "BookPrice": "1,690", "BookIsbn": "9780099524038", "BookLink": "https://prestigebookshop.com/product/case-for-god-the/", "imageLink": "https://prestigebookshop.com/wp-content/uploads/2019/02/book-image-9967.jpg", "BookStore": "Prestige Bookshop"},
     {"BookTitle": "Lord Of The Rings, The – Trilogy set", "BookAuthor": "J R R Tolkien", "BookPrice": "1,700", "BookIsbn": "9780261102385", "BookLink": "https://prestigebookshop.com/product/lord-of-the-rings-the-trilogy-set/", "imageLink": "https://prestigebookshop.com/wp-content/uploads/2019/02/book-image-9848.jpg", "BookStore": "Prestige Bookshop"},
     {"BookTitle": "DANCE OF CHANGE, THE", "BookAuthor": "Peter Senge", "BookPrice": "2,990", "BookIsbn": "9781857882438", "BookLink": "https://prestigebookshop.com/product/dance-of-change-the/", "imageLink": "https://prestigebookshop.com/wp-content/uploads/2019/02/book-image-9616.jpg", "BookStore": "Prestige Bookshop"},
@@ -3773,4 +3773,4 @@ const books = [
     ]
     
     
-module.exports = books
+module.exports = sampledata
