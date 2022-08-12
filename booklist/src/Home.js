@@ -15,7 +15,7 @@ function Home() {
        
             <div className='hero '>
                 <h2 className='text-white '>Curate Your Booklist!</h2>
-                <p className='text-white col-md-5'>we aggregate book and stationary prices from all major online stores so you can easily shop for the right book </p>
+                <p className='text-white col-md-5 mb-3'>we aggregate book and stationary prices from all major online stores so you can easily shop for the right book </p>
                 <button >Create Booklist</button>
                     
             </div>
