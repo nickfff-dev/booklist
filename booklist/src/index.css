@@ -72,3 +72,33 @@ p, div, h1, h2,h3,h4{
 .hero + h2{
   color: #2A0944
 }
+
+
+.card{
+ 
+  background-color:#F5FFFA;
+  padding: 1%;
+  
+}
+
+
+
+
+.card h4{
+  font-weight: 400;
+}
+
+
+
+.card img{
+  
+  border-radius:8px;
+  max-width:100%;
+  max-height:100%;
+}
+
+
+.card span{
+  display: inline-block;
+ 
+}
