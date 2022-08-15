@@ -52,7 +52,7 @@ function Bookview() {
       </div>
       
 
-      <div className="d-flex flex-row flex-wrap justify-content-center">
+      <div className="d-flex flex-row flex-wrap justify-content-evenly">
         
       {data  && data.byBookTitle.map((book, index) => (
        <div className="card mb-3" key={index} >
